@@ -12,11 +12,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install dependencies
-        # ⚠️ Pick one of these, matching the package manager for your project
-        run: |
-          npm ci 
-          pnpm install
-          yarn install --immutable --immutable-cache --check-cache
+        run: npm ci
 
       - name: Run Chromatic
         uses: chromaui/action@latest
