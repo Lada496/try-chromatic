@@ -12,7 +12,7 @@ interface ButtonProps {
    * Is this the principal call to action on the page?
    */
 
-  variety?: (typeof VARIETY)[keyof typeof VARIETY]; //  "primary" | "secondary" | "tertiary";
+  variety: (typeof VARIETY)[keyof typeof VARIETY]; //  "primary" | "secondary" | "tertiary";
   /**
    * What background color to use
    */
@@ -35,7 +35,7 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = ({
-  variety = VARIETY.PRIMARY,
+  variety,
   size = "medium",
   backgroundColor,
   label,
