@@ -1,5 +1,5 @@
 .storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
   border-radius: 3em;
@@ -15,6 +15,14 @@
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--tertiary {
+  color: #333;
+  background-color: transparent;
+}
+
+.storybook-button--tertiary:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 .storybook-button--small {
   font-size: 12px;
